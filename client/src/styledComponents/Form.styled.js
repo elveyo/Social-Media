@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { Form } from "formik";
 
-export const StyledForm = styled(Form)`
+export const PostForm = styled(Form)`
   width: 50%;
-  min-height: 400px;
+  min-height: 300px;
   margin-top: -50px;
   padding: 20px;
   display: flex;
@@ -24,7 +24,7 @@ export const StyledForm = styled(Form)`
     letter-spacing: 1px;
   }
   input {
-    margin: 15px;
+    margin: 10px;
     padding: 8px 15px;
     width: 80%;
     outline: none;
@@ -34,7 +34,7 @@ export const StyledForm = styled(Form)`
   button {
     display: block;
     width: 40%;
-    margin: 30px;
+    margin: 20px;
     background: white;
     border: 1px solid dodgerblue;
     border-radius: 10px;

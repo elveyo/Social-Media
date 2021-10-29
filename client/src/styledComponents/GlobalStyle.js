@@ -38,10 +38,24 @@ export const Nav = styled.nav`
   background-color: dodgerblue;
   display: flex;
   align-items: center;
-  a {
+  justify-content: space-between;
+  div {
+    margin: 0 50px;
+  }
+  a,
+  button {
     text-decoration: none;
     color: white;
     font-size: 18px;
     margin: 0 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: 0.1s ease;
+    padding: 5px 0;
+  }
+  a:hover,
+  button:hover {
+    letter-spacing: 1px;
   }
 `;

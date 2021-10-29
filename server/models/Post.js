@@ -4,6 +4,7 @@ const postSchema = new Schema({
   title: String,
   postText: String,
   username: String,
+  userId: { type: Schema.Types.ObjectId },
   comments: [{ type: Schema.Types.ObjectId, ref: "Comment" }],
 });
 

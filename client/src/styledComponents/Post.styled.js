@@ -9,6 +9,7 @@ export const Post = styled.div`
   width: 40%;
   min-height: 300px;
   margin-top: 50px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,13 +32,23 @@ export const Post = styled.div`
   footer {
     flex: 20%;
     ${sharedStyle}
-    justify-content: flex-start;
+    display:flex;
+    justify-content: space-between;
     padding: 0 10px;
     background-color: dodgerblue;
     border-radius: 0 0 10px 10px;
+    div {
+      padding: 5px;
+      display: flex;
+      align-items: flex-end;
+    }
+    p {
+      font-size: 20px;
+      margin: 0 5px;
+    }
   }
 `;
 export const PostReview = styled(Post)`
   height: 75%;
-  width: 45%;
+  width: 55%;
 `;
