@@ -1,9 +1,11 @@
 const mongoose = require("mongoose");
 const Post = require("./models/Post");
 const Comment = require("./models/Comment");
+require("dotenv").config()
+
 mongoose
   .connect(
-    "mongodb+srv://elveyo:odekucisad3@cluster0.sbokc.mongodb.net/socialMedia?retryWrites=true&w=majority",
+    `${process.env.MONGODB_CONNECTION_STRING}`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

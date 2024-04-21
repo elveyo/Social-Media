@@ -37,7 +37,7 @@ function App() {
         <Nav>
           <div>
             <Link to="/">Home</Link>
-            <Link to="/createPost">Create Post</Link>
+            {authState.username &&<Link to="/createPost">Create Post</Link>}
           </div>
           {!authState.status ? (
             <div>

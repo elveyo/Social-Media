@@ -7,10 +7,11 @@ const commentRoutes = require("./routes/comments");
 const userRoutes = require("./routes/users");
 const likeRoutes = require("./routes/likes");
 const cookieParser = require("cookie-parser");
+require("dotenv").config()
 
 mongoose
   .connect(
-    "mongodb+srv://elveyo:odekucisad3@cluster0.sbokc.mongodb.net/socialMedia?retryWrites=true&w=majority",
+  `${process.env.MONGODB_CONNECTION_STRING}`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

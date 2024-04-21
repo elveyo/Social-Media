@@ -6,6 +6,8 @@ import axios from "axios";
 import { FormPage } from "../styledComponents/GlobalStyle";
 import * as Yup from "yup";
 function Register() {
+  const history = useHistory();
+
   const validationSchema = Yup.object().shape({
     username: Yup.string().required("Enter name!").min(4).max(15),
     password: Yup.string().required("Password is required!"),
@@ -22,7 +24,7 @@ function Register() {
       "http://localhost:3001/auth/register",
       data
     );
-    console.log(response);
+    history.push("/login")
   };
   return (
     <div>
